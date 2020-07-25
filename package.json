@@ -1,0 +1,33 @@
+{
+    "name": "caf_healthypi",
+    "description": "Cloud Assistants basic iot example",
+    "version": "0.4.0",
+    "dependencies": {
+        "caf_react" :"^0.4.0",
+        "caf_core": "^0.4.0",
+        "caf_cli": "^0.4.0",
+        "caf_iot": "^0.4.0",
+        "caf_transport": "^0.4.0",
+        "react" : "^16.6.0",
+        "react-dom" : "^16.6.0",
+        "react-bootstrap" : "^0.32.4",
+        "redux": "^3.7.2",
+        "webgl-plot": "^0.3.1",
+        "keymirror": "^0.1.0"
+    },
+    "devDependencies": {
+        "caf_dcinabox" :"^0.4.0",
+        "browserify" : "^16.0.0",
+        "nodeunit" : ">=0.9",
+        "uglify-es": "^3.3.8"
+    },
+    "scripts": {
+        "start": "node ./index.js",
+        "test": "node ./node_modules/.bin/nodeunit",
+        "build": "./bin/build.sh"
+    },
+    "main": "index",
+    "engines": {
+        "node": ">= 10.0.0"
+    }
+}

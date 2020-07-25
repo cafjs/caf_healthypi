@@ -1,0 +1,31 @@
+<!-- index.html -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Healthypi</title>
+    <style>
+      .button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+     }
+  </style>
+  </head>
+  <body>
+    <section id="content"></section>
+    <button class="button" id="confirmScan" style= "display:none;">Click to Pair</button>
+    <h2 id="afterConfirmScan" style= "display:none;"> Running... </h2>
+    <script src="js/build-iot.min.js" async></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "caf_iot_healthypi",
+  "description": "Cloud Assistants IoT example (Device)",
+  "version": "0.4.0",
+  "author": "",
+  "dependencies": {
+      "caf_iot" : "^0.4.0",
+      "caf_iot_gatt" : "^0.4.0"
+   },
+   "browser" : {
+        "./lib/main.js" : "./lib/main-shim.js"
+    },
+    "scripts": {
+       "start" : "node ./index.js",
+        "build": "echo done"
+    },
+   "main": "index",
+  "engines": { "node": ">= 10.0.0" }
+}

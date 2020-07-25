@@ -1,0 +1,63 @@
+{
+    "name" : "ca",
+    "components" : [
+        {
+            "module": "caf_react#plug_ca",
+            "name": "react",
+            "description": "Manages background rendering for this CA.",
+            "env" : {
+                "maxRetries" : "$._.env.maxRetries",
+                "retryDelay" : "$._.env.retryDelay",
+                "coinPlayTime" : "process.env.COIN_PLAY_TIME||900"
+            },
+            "components" : [
+                {
+                    "module": "caf_react#proxy",
+                    "name": "proxy",
+                    "description": "Provides the background rendering API.",
+                    "env" : {
+
+                    }
+                }
+            ]
+        },
+        {
+            "module": "caf_iot#plug_ca",
+            "name": "iot",
+            "description": "Manages an IoT device for this CA.",
+            "env" : {
+                "maxRetries" : "$._.env.maxRetries",
+                "retryDelay" : "$._.env.retryDelay",
+                "marginInMsec": "process.env.MARGIN_IN_MSEC||1000"
+            },
+            "components" : [
+                {
+                    "module": "caf_iot#proxy",
+                    "name": "proxy",
+                    "description": "Provides access to an IoT device.",
+                    "env" : {
+
+                    }
+                }
+            ]
+        },
+        {
+            "name": "handler",
+            "components" : [
+                {
+                    "name": "props",
+                    "env" : {
+                        "serviceHeartRate": "process.env.SERVICE_HEART_RATE||0x180D",
+                        "charHeartRate": "process.env.CHAR_HEART_RATE||0x2A37",
+                        "serviceOximetry": "process.env.SERVICE_OXIMETRY||0x1822",
+                        "charOximetry":  "process.env.CHAR_OXIMETRY||0x2A5E",
+                        "serviceTemp": "process.env.SERVICE_TEMP||0x1809",
+                        "charTemp": "process.env.CHAR_TEMP||0x2A6E",
+                        "serviceECG": "process.env.SERVICE_ECG||0x1122",
+                        "charECG": "process.env.CHAR_ECG||0x1424"
+                    }
+                }
+            ]
+        }
+    ]
+}
