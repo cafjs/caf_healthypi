@@ -6,7 +6,7 @@
   "dependencies": {
       "caf_iot" : "^0.4.0",
       "caf_iot_gatt" : "^0.4.0",
-      "@abandonware/noble": "^1.9.2-7",
+      "@abandonware/noble": "1.9.2-11",
       "readable-stream": "^2.3.7",
       "@abandonware/bluetooth-hci-socket": "^0.5.3-1"
    },
