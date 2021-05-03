@@ -2,6 +2,13 @@
     "name" : "ca",
     "components" : [
         {
+            "name": "session",
+             "env" : {
+                 "maxSessions" :"process.env.MAX_SESSIONS||5",
+                 "maxMessages" : "process.env.MAX_MESSAGES||1"
+             }
+        },
+        {
             "module": "caf_react#plug_ca",
             "name": "react",
             "description": "Manages background rendering for this CA.",
