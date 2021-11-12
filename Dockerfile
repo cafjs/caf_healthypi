@@ -5,7 +5,7 @@
 # TO_BUILD:        cafjs mkImage . gcr.io/cafjs-k8/<user>-healthypi
 # TO_RUN:         cafjs run --appImage gcr.io/cafjs-k8/<user>-healthypi healthypi
 
-FROM node:14
+FROM node:16
 
 EXPOSE 3000
 
