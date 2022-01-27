@@ -19,7 +19,7 @@
                     }
                 },
                 {
-                    "module": "./plug_iot_gatt",
+                    "module": "./local_caf_iot_gatt#plug_iot",
                     "name": "gatt",
                     "description": "Access to GATT services.",
                     "env" : {
