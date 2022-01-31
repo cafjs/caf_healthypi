@@ -2,7 +2,7 @@
 # DOCKER-VERSION  1.7.0
 # AUTHOR:         Antonio Lain <antlai@cafjs.com>
 # DESCRIPTION:    Cloud Assistants application healthypi
-# TO_BUILD:       docker build -f Dockerfile.gh --tag ghcr.io/cafjs/caf_healthypi .
+# TO_BUILD:       docker build --tag ghcr.io/cafjs/caf_healthypi .
 # TO_RUN:         cafjs run --appImage ghcr.io/cafjs/caf_healthypi healthypi
 
 FROM ghcr.io/cafjs/caf:latest

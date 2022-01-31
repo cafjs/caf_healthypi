@@ -37,7 +37,6 @@ jobs:
         with:
           context: .
           file: ./Dockerfile.gh
-          network: host
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
